@@ -54,8 +54,8 @@ func (b *Board) NewGen() Board {
 	newBoard := Board{}
 
 	for _, cell := range b.cells {
-		if b.NeighborsAlive(cell) == 2 ||
-			b.NeighborsAlive(cell) == 3 {
+		n := b.NeighborsAlive(cell)
+		if n == 2 || n == 3 {
 			newBoard = newBoard.Add(cell)
 		}
 
