@@ -20,9 +20,8 @@ func (b *Board) Contains(c Cell) bool {
 }
 
 func (b Board) Add(c Cell) Board {
-	nextBoard := b
-	nextBoard.cells = append(nextBoard.cells, c)
-	return nextBoard
+	b.cells = append(b.cells, c)
+	return b
 }
 
 func NeighborsCoords(c Cell) Board {
