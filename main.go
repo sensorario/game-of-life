@@ -6,16 +6,23 @@ import "os/exec"
 import "os"
 
 func main() {
-	size := 18
-	steps := 60
+	size := 25
+	steps := 120
 
 	b := Board{
 		[]Cell{
+
+			// gilde
 			Cell{0, 4},
 			Cell{1, 4},
 			Cell{2, 4},
 			Cell{2, 3},
 			Cell{1, 2},
+
+			// warm
+			Cell{10, 14},
+			Cell{11, 14},
+			Cell{12, 14},
 		},
 	}
 
