@@ -7,7 +7,7 @@ import "os"
 
 func main() {
 	size := 25
-	steps := 120
+	steps := 420
 
 	b := Board{
 		[]Cell{
@@ -44,6 +44,6 @@ func main() {
 			fmt.Println("")
 		}
 
-		time.Sleep(time.Second / 10)
+		time.Sleep(time.Second / 5)
 	}
 }
