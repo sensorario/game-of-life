@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
-import "time"
-import "os/exec"
-import "os"
+import (
+	"fmt"
+	"os"
+	"os/exec"
+	"time"
+)
 
 func main() {
 	size := 25
@@ -36,9 +38,9 @@ func main() {
 		for i := 0; i <= size; i++ {
 			for j := 0; j <= size*2; j++ {
 				if b.Contains(Cell{i, j}) {
-					fmt.Print("●")
+					fmt.Print("\033[1;31m●")
 				} else {
-					fmt.Print("○")
+					fmt.Print("\033[1;34m○")
 				}
 			}
 			fmt.Println("")
